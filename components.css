@@ -628,16 +628,19 @@
   position: relative;
 }
 
+  .hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+  }
+
   .hero-text {
     position: static;
     transform: none;
     max-width: 100%;
-    text-align: center; 
-  }
-
-  .hero .container {
-    align-items: center;
-    padding-right: 20px; 
+    text-align: center;
+    padding: 0 20px; 
   }
 
 }
