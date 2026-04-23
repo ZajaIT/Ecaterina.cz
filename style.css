@@ -64,10 +64,6 @@ p {
   margin-bottom: 15px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body.menu-open {
   position: fixed;
   width: 100%;
