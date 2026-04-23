@@ -577,20 +577,31 @@
   }
 
   .nav {
-    display: none; 
-  }
-  /* OTEVŘENÉ MENU */
-.nav.active {
-  display: flex;
-  flex-direction: column;
   position: absolute;
   top: 70px;
   right: 0;
   width: 100%;
+
   background: white;
-  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  z-index: 999;
+
+  padding: 30px 20px;
+
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+  
+  /* OTEVŘENÉ MENU */
+.nav.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* ANIMACE HAMBURGER → KŘÍŽEK */
