@@ -625,44 +625,42 @@
   }
 
   /* HERO */
+  @media (max-width: 768px) {
+
   .hero {
-  height: 100vh;
-  margin-top: 80px;
+    height: auto;
+    margin-top: 80px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+    /* 👇 KLÍČ */
+    padding-top: 320px; /* 👉 tím vytvoříš prostor pro obrázek */
+    padding-bottom: 40px;
 
-  padding-top: 0;
-  padding-bottom: 60px;
-
-  background-size: contain;
-  background-position: top center !important; 
-}
-
-  .hero-text {
-    position: static;
-    top: auto;
-    right: auto;
-    transform: none;
-
-    max-width: 100%;
-    text-align: center;
-    padding: 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .hero h1 {
-  margin-top: 150px;   
-  margin-bottom: 20px; 
-}
+  .hero-text {
+    position: static;
+    transform: none;
 
-.hero-intro {
-  margin-top: 0;
-}
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    margin: 0 0 10px;
+  }
+
+  .hero-intro {
+    margin: 0;
+  }
 
 }
