@@ -228,7 +228,7 @@
 .services {
   background: #f5f1ec;
   position: relative;
-  
+  overflow: hidden;
   margin-bottom: 0px;
   padding-bottom: 0;
 }
