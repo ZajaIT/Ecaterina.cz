@@ -634,22 +634,14 @@
     background-repeat: no-repeat !important;
   }
 
+  .hero .container {
+    justify-content: flex-start !important;
+    height: auto !important;
+  }
+
   .hero-text {
     position: static !important;
-    top: auto !important;
-    right: auto !important;
     transform: none !important;
-
-    text-align: center !important;
-    padding: 0 20px !important;
-    margin: 0 !important;
-  }
-
-  .hero h1 {
-    margin: 20px 0 10px !important;
-  }
-
-  .hero-intro {
     margin: 0 !important;
   }
 
