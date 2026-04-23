@@ -628,4 +628,9 @@
   position: relative;
 }
 
+  .hero-text {
+    position: static;
+    transform: none;
+  }
+
 }
