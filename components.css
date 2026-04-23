@@ -581,53 +581,50 @@
   }
 
   .nav {
-  position: absolute;
-  top: 70px;
-  left: 0; /* DŮLEŽITÉ */
-  width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
 
-  background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
 
-  padding: 30px 20px;
+    transition: all 0.3s ease;
+  }
 
-  transform: translateY(-20px);
-  opacity: 0;
-  pointer-events: none;
+  .nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-  transition: all 0.3s ease;
-}
-  
-  /* OTEVŘENÉ MENU */
-.nav.active {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
-/* ANIMACE HAMBURGER → KŘÍŽEK */
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
+  /* HERO */
   .hero {
     height: auto;
     margin-top: 80px;
@@ -639,9 +636,9 @@
 
     padding-top: 20px;
     padding-bottom: 60px;
+
     background-size: cover;
     background-position: 50% -150px;
-}
   }
 
   .hero-text {
@@ -660,11 +657,12 @@
   }
 
   .hero h1 {
-  margin-top: 0;
-  margin-bottom: 200px;
-}
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
 
-.hero-intro {
-  margin-top: 0;
-}
+  .hero-intro {
+    margin-top: 0;
+  }
+
 }
