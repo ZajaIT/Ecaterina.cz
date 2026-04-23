@@ -20,7 +20,7 @@
   <div class="container header-inner">
 
     <nav class="nav">
-      <a href="#top">Domů</a>
+      <a href="#">Domů</a>
       <a href="#about">O mně</a>
       <a href="#services">Služby</a>
       <a href="blog.html">Blog</a>
@@ -442,16 +442,6 @@ navLinks.forEach(link => {
     document.body.style.top = '';
     window.scrollTo(0, scrollPosition);
   });
-});
-
-  <script id="homefix">
-const homeLink = document.querySelector('a[href="#top"]');
-
-homeLink.addEventListener('click', function(e) {
-  if (window.innerWidth <= 768) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 });
 </script>
 
