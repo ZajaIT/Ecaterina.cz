@@ -443,6 +443,16 @@ navLinks.forEach(link => {
     window.scrollTo(0, scrollPosition);
   });
 });
+
+  <script id="homefix">
+const homeLink = document.querySelector('a[href="#top"]');
+
+homeLink.addEventListener('click', function(e) {
+  if (window.innerWidth <= 768) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+});
 </script>
 
 </body>
