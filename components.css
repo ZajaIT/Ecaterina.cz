@@ -617,4 +617,18 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-btn {
+  order: 1;
+}
+
+.hamburger {
+  order: 2;
+}
+
 }
