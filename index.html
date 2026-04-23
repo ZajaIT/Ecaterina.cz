@@ -397,27 +397,33 @@ leftArrow.addEventListener('click', function() {
   showReview(current);
 });
 
-  /* HAMBURGER MENU */
+ /* HAMBURGER MENU */
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
 
 hamburger.addEventListener('click', function(e) {
   e.stopPropagation();
+
   hamburger.classList.toggle('active');
   nav.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
 });
 
-  document.addEventListener('click', function() {
+/* ZAVŘENÍ KLIKEM MIMO */
+document.addEventListener('click', function() {
   hamburger.classList.remove('active');
   nav.classList.remove('active');
+  document.body.classList.remove('menu-open');
 });
 
-  const navLinks = document.querySelectorAll('.nav a');
+/* ZAVŘENÍ PO KLIKU NA POLOŽKU */
+const navLinks = document.querySelectorAll('.nav a');
 
 navLinks.forEach(link => {
   link.addEventListener('click', function() {
     hamburger.classList.remove('active');
     nav.classList.remove('active');
+    document.body.classList.remove('menu-open');
   });
 });
 </script>
