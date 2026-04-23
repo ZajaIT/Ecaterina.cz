@@ -70,6 +70,10 @@ p {
     width: 100%;
     overflow: hidden;
   }
+
+  html {
+    scroll-padding-top: 0;
+  }
 }
 
 
