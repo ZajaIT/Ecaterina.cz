@@ -626,20 +626,20 @@
 
   /* HERO */
   .hero {
-    height: 100vh;
-    margin-top: 80px;
+  height: 100vh;
+  margin-top: 80px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    padding-top: 20px;
-    padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 
-    background-size: contain;
-    background-position: 50% 50px;
-  }
+  background-size: contain;
+  background-position: top center; /* 👈 tohle */
+}
 
   .hero-text {
     position: static;
