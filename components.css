@@ -551,3 +551,33 @@
 .contact-form .btn:hover {
   background: #6f5747;
 }
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* ČÁRKY */
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #FEA662;
+  display: block;
+  transition: 0.3s;
+}
+
+/* MOBIL */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    display: none; 
+  }
+
+}
