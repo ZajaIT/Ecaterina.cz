@@ -20,7 +20,7 @@
   <div class="container header-inner">
 
     <nav class="nav">
-      <a href="#">Domů</a>
+      <a href="#top">Domů</a>
       <a href="#about">O mně</a>
       <a href="#services">Služby</a>
       <a href="blog.html">Blog</a>
@@ -434,13 +434,20 @@ document.addEventListener('click', function() {
 
 /* ZAVŘENÍ PO KLIKU NA POLOŽKU */
 navLinks.forEach(link => {
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function(e) {
+
+    const isHome = link.getAttribute('href') === '#top';
+
     hamburger.classList.remove('active');
     nav.classList.remove('active');
 
     document.body.classList.remove('menu-open');
     document.body.style.top = '';
-    window.scrollTo(0, scrollPosition);
+
+    if (!isHome) {
+      window.scrollTo(0, scrollPosition);
+    }
+
   });
 });
 </script>
