@@ -626,7 +626,7 @@
 
   /* HERO */
   .hero {
-    height: auto;
+    height: 100vh;
     margin-top: 80px;
 
     display: flex;
@@ -637,8 +637,8 @@
     padding-top: 20px;
     padding-bottom: 60px;
 
-    background-size: cover;
-    background-position: 50% -150px;
+    background-size: contain;
+    background-position: top center;
   }
 
   .hero-text {
