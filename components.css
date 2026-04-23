@@ -628,4 +628,33 @@
   position: relative;
 }
 
+  @media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    margin-top: 80px;
+    background: none; 
+  }
+
+  .hero .container {
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .hero-text {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-mobile-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+
+}
+
 }
