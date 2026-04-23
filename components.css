@@ -626,7 +626,14 @@
 
   .hero {
     height: auto !important;
-    padding-top: 220px !important;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 140px !important; /* ← tady ladíš mezeru */
     padding-bottom: 40px !important;
 
     background-size: contain !important;
@@ -635,14 +642,33 @@
   }
 
   .hero .container {
-    justify-content: flex-start !important;
     height: auto !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-right: 0 !important;
   }
 
   .hero-text {
-    position: static !important;
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
     transform: none !important;
-    margin: 0 !important;
+
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    margin: 0 0 20px 0 !important;
+  }
+
+  .hero-intro {
+    margin-top: 0 !important;
   }
 
 }
