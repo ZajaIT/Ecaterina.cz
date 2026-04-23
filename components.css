@@ -640,7 +640,8 @@
     padding-top: 20px;
     padding-bottom: 60px;
     background-size: cover;
-    background-position: center -150px;
+    background-position: 50% -150px;
+}
   }
 
   .hero-text {
