@@ -64,8 +64,15 @@ p {
   margin-bottom: 15px;
 }
 
-body.menu-open {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
+@media (max-width: 768px) {
+  body.menu-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
 }
+
+
+
+
+
