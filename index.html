@@ -436,15 +436,15 @@ document.addEventListener('click', function() {
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
 
-    const isHome = link.getAttribute('href') === '#top';
-
     hamburger.classList.remove('active');
     nav.classList.remove('active');
 
     document.body.classList.remove('menu-open');
     document.body.style.top = '';
 
-    if (!isHome) {
+    if (link.getAttribute('href') === '#top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
       window.scrollTo(0, scrollPosition);
     }
 
