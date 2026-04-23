@@ -629,13 +629,16 @@
 }
 
   .hero {
+  height: auto;           
+  margin-top: 80px;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
 
-  padding-top: 40px; 
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .hero-text {
@@ -650,10 +653,9 @@
   align-items: center;
 }
 
-/* NADPIS úplně nahoře */
 .hero h1 {
   margin-top: 0;
-  margin-bottom: 120px; 
+  margin-bottom: 140px; /* klidně víc – to je ta velká mezera */
 }
 
 }
