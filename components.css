@@ -638,7 +638,7 @@
   padding-bottom: 60px;
 
   background-size: contain;
-  background-position: 0 0; 
+  background-position: top center !important; 
 }
 
   .hero-text {
