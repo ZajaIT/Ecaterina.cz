@@ -574,6 +574,7 @@
 
   .hamburger {
     display: flex;
+    margin-left: auto;
   }
 
   .nav {
@@ -621,14 +622,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.cta-btn {
-  order: 1;
-}
-
-.hamburger {
-  order: 2;
 }
 
 }
