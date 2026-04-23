@@ -397,33 +397,49 @@ leftArrow.addEventListener('click', function() {
   showReview(current);
 });
 
- /* HAMBURGER MENU */
+ /* HAMBURGER MENU + LOCK SCROLL (FULL FIX) */
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav a');
+
+let scrollPosition = 0;
 
 hamburger.addEventListener('click', function(e) {
   e.stopPropagation();
 
-  hamburger.classList.toggle('active');
+  const isOpen = hamburger.classList.toggle('active');
   nav.classList.toggle('active');
-  document.body.classList.toggle('menu-open');
+
+  if (isOpen) {
+    scrollPosition = window.scrollY;
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.classList.add('menu-open');
+  } else {
+    document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
+  }
 });
 
 /* ZAVŘENÍ KLIKEM MIMO */
 document.addEventListener('click', function() {
   hamburger.classList.remove('active');
   nav.classList.remove('active');
+
   document.body.classList.remove('menu-open');
+  document.body.style.top = '';
+  window.scrollTo(0, scrollPosition);
 });
 
 /* ZAVŘENÍ PO KLIKU NA POLOŽKU */
-const navLinks = document.querySelectorAll('.nav a');
-
 navLinks.forEach(link => {
   link.addEventListener('click', function() {
     hamburger.classList.remove('active');
     nav.classList.remove('active');
+
     document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
   });
 });
 </script>
