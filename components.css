@@ -631,6 +631,13 @@
   .hero-text {
     position: static;
     transform: none;
+    max-width: 100%;
+    text-align: center; 
+  }
+
+  .hero .container {
+    align-items: center;
+    padding-right: 20px; 
   }
 
 }
