@@ -624,16 +624,9 @@
     position: relative;
   }
 
-  .hero {
+    .hero {
     height: auto !important;
-    margin-top: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    padding-top: 140px !important; /* ← tady ladíš mezeru */
+    padding-top: 0 !important; /* ❌ zruš to co tě tlačí dolů */
     padding-bottom: 40px !important;
 
     background-size: contain !important;
@@ -641,16 +634,9 @@
     background-repeat: no-repeat !important;
   }
 
-  .hero .container {
-    height: auto !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    padding-right: 0 !important;
-  }
-
   .hero-text {
     position: relative !important;
-    top: 0 !important;
+    top: -60px !important; /* 🔥 POSUN NAHORU */
     right: 0 !important;
     transform: none !important;
 
@@ -661,14 +647,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .hero h1 {
-    margin: 0 0 20px 0 !important;
-  }
-
-  .hero-intro {
-    margin-top: 0 !important;
   }
 
 }
