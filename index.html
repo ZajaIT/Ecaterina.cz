@@ -425,13 +425,19 @@ hamburger.addEventListener('click', function(e) {
 });
 
 /* ZAVŘENÍ KLIKEM MIMO */
-document.addEventListener('click', function() {
-  hamburger.classList.remove('active');
-  nav.classList.remove('active');
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.header')) {
 
-  document.body.classList.remove('menu-open');
-  document.body.style.top = '';
-  window.scrollTo(0, scrollPosition);
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+
+    if (document.body.classList.contains('menu-open')) {
+      document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollPosition);
+    }
+
+  }
 });
 
 /* ZAVŘENÍ PO KLIKU NA POLOŽKU */
