@@ -627,7 +627,7 @@
   .hero {
   height: auto !important;
 
-  padding-top: 200px !important; /* 🔥 HLAVNÍ ŘÍZENÍ POZICE */
+  padding-top: 220px !important; /* 🔥 HLAVNÍ ŘÍZENÍ POZICE */
   padding-bottom: 40px !important;
 
   background-size: contain !important;
@@ -658,6 +658,4 @@
 
 .hero .btn {
   margin-top: 10px;
-}
-
 }
