@@ -693,7 +693,7 @@
   .about-image {
     position: absolute;
     /* Zrušíme vyosení z PC (-250px) a necháme ho v horní části */
-    top: 0; 
+    top: -50px;
     /* Necháme ho vpravo, jak jsi ho měla */
     right: 50px; 
     z-index: 1;
