@@ -641,7 +641,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 120px; /* 🔥 výška obrázku */
+  height: 140px; /* 🔥 výška obrázku */
 }
 
 .hero-text {
