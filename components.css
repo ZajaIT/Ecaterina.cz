@@ -659,32 +659,34 @@
 .hero .btn {
   margin-top: 10px;
 }
-  
- .reviews-slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-/* recenze první */
-.review {
-  order: 1;
-}
+  .reviews-slider {
+    display: flex;
+    flex-wrap: wrap;         /* Umožní prvkům skládat se pod sebe */
+    justify-content: center; /* Vše (recenze i šipky) bude na střed */
+    max-width: 100%;
+  }
 
-/* 🔥 KLÍČ – šipky vedle sebe */
-.arrow-left,
-.arrow-right {
-  position: static;
-  transform: none;
+  .review {
+    width: 100%;             /* Recenze zabere celý řádek, čímž odsune šipky pod sebe */
+    order: -1;               /* Pojistka, aby recenze byla vždy nad šipkami */
+    position: relative;      /* Resetuje absolutní pozici z PC */
+    opacity: 0;
+    display: none;           /* Skryje neaktivní recenze */
+  }
 
-  order: 2;
-  margin-top: 20px;
+  .review.active {
+    display: block;          /* Ukáže jen tu aktivní */
+    opacity: 1;
+    margin-bottom: 30px;     /* Mezera mezi textem a šipkami */
+  }
 
-  display: inline-flex; /* 🔥 tohle je důležité */
-}
-
-/* 🔥 mezera mezi nimi */
-.arrow-right {
-  margin-left: 15px;
-}
+  .arrow {
+    position: static;        /* Šipky přestanou "létat" a sednou si do řady */
+    transform: none;
+    margin: 0 10px;          /* Mezera mezi šipkami navzájem */
+    display: flex;           /* Aby zůstaly viditelné a vycentrované */
+    align-items: center;
+    justify-content: center;
+  }
 }
