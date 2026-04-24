@@ -400,6 +400,39 @@ leftArrow.addEventListener('click', function() {
   showReview(current);
 });
 
+  /* SWIPE PRO MOBILY */
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slider = document.querySelector('.reviews-slider');
+
+slider.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].screenX;
+}, {passive: true});
+
+slider.addEventListener('touchend', e => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+}, {passive: true});
+
+function handleSwipe() {
+  const swipeThreshold = 50; // minimální délka swipu v pixelech
+  
+  if (touchEndX < touchStartX - swipeThreshold) {
+    // Swipe doleva -> další recenze
+    current++;
+    if (current >= reviews.length) current = 0;
+    showReview(current);
+  }
+  
+  if (touchEndX > touchStartX + swipeThreshold) {
+    // Swipe doprava -> předchozí recenze
+    current--;
+    if (current < 0) current = reviews.length - 1;
+    showReview(current);
+  }
+}
+
  /* HAMBURGER MENU + LOCK SCROLL (FULL FIX) */
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
