@@ -666,28 +666,30 @@
   text-align: center;
 }
 
-/* recenze vždy první */
+/* recenze první */
 .review {
   order: 1;
 }
 
-/* šipky až pod recenzí */
-.arrow {
-  position: static;
-  transform: none;
-
+/* levá šipka vytvoří řádek */
+.arrow-left {
   order: 2;
   margin-top: 20px;
 
-  display: inline-block; /* 🔥 KLÍČ */
+  position: static;
+  transform: none;
+
+  display: inline-flex;
 }
 
-/* 🔥 obě šipky vedle sebe dole */
-.arrow-left {
-  margin-right: 10px;
-}
-
+/* pravá šipka se k ní přilepí */
 .arrow-right {
-  margin-left: 10px;
+  order: 2;
+
+  position: static;
+  transform: none;
+
+  display: inline-flex;
+  margin-left: 15px;
 }
 }
