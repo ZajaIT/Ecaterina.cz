@@ -134,7 +134,7 @@
         <p>Nedaří se ti posouvat v podnikání? Rád/a bys stoupal/a po kariérním žebříčku?</p>
         <p><strong>Vyber si jeden z mých balíčků!</strong></p>
 
-        <a href="#" class="packages-btn">Balíčky</a>
+        <button class="packages-btn" type="button">Balíčky</button>
 
         <div class="packages-content">
 
@@ -364,10 +364,12 @@
     e.stopPropagation();
   });
 
-  document.addEventListener('click', function() {
+  document.addEventListener('click', function(e) {
+  if (!e.target.closest('.service-card-main')) {
     content.classList.remove('active');
     btn.textContent = 'Balíčky';
-  });
+  }
+});
 
   cta.addEventListener('click', function() {
     content.classList.remove('active');
