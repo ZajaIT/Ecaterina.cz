@@ -665,34 +665,26 @@
   align-items: center;
 }
 
+/* recenze vždy první */
+.review {
+  order: 1;
+}
+
+/* šipky až pod recenzí */
 .arrow {
-  position: static; /* 🔥 zruší absolute */
+  position: static;
   transform: none;
 
-  margin: 20px 10px 0; /* mezera nahoře + mezi šipkami */
+  order: 2;
+  margin-top: 20px;
 }
 
-.arrow-left,
+/* 🔥 obě šipky vedle sebe dole */
+.arrow-left {
+  margin-right: 10px;
+}
+
 .arrow-right {
-  position: static;
-}
-
-.reviews-slider {
-  gap: 10px;
-}
-
-.reviews-slider::after {
-  content: "";
-  display: block;
-}
-
-.reviews-slider {
-  text-align: center;
-}
-
-/* šipky vedle sebe */
-.arrow-left,
-.arrow-right {
-  display: inline-flex;
+  margin-left: 10px;
 }
 }
