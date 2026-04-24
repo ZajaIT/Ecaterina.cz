@@ -625,30 +625,47 @@
   }
 
   .hero {
-    height: auto !important;
-    padding-top: 0 !important;
-    padding-bottom: 40px !important;
+  height: auto !important;
+  padding-top: 0 !important;
+  padding-bottom: 40px !important;
 
-    background-size: contain !important;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-  }
+  background-size: contain !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
 
-  .hero .container {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important; /* 🔥 KLÍČ */
-    align-items: center !important;
-    height: auto !important;
-    padding-right: 0 !important;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-  .hero-text {
-    position: static !important; /* 🔥 KLÍČ */
-    transform: none !important;
-    max-width: 100%;
-    text-align: center;
-    padding: 0 20px;
-  }
+.hero .container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  height: auto !important;
+  padding-right: 0 !important;
+}
+
+.hero-text {
+  position: static !important;
+  transform: none !important;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 20px;
+
+  margin-top: 20px; /* 🔥 mezera pod obrázkem */
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  margin-top: 10px;
+}
 
 }
