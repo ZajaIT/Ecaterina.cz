@@ -692,31 +692,30 @@
 
   .about-image {
     position: absolute;
-    /* Zrušíme vyosení z PC (-250px) a necháme ho v horní části */
-    top: -50px;
-    /* Necháme ho vpravo, jak jsi ho měla */
+   
+    top: 0px;
+    
     right: 50px; 
     z-index: 1;
   }
 
   .about-image img {
-    /* Necháme původní velikost (nebo podle potřeby), aby mohl vykukovat */
+    
     max-width: 400px; 
     width: 100%;
     
-    /* Světlý jako vodoznak */
+   
     opacity: 0.1; 
     
-    /* Úplně svislý - zrušíme rotaci 45deg */
+   
     transform: rotate(0deg); 
   }
 
   .about-text {
     position: relative;
-    z-index: 5; /* Text je bezpečně nad obrázkem */
+    z-index: 5; 
   }
 
-  /* Aby ten vykukující obrázek neudělal v mobilu vodorovný posuvník (scroll do boku) */
   .about {
     overflow: hidden;
   }
