@@ -659,3 +659,40 @@
 .hero .btn {
   margin-top: 10px;
 }
+  .reviews-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  position: static; /* 🔥 zruší absolute */
+  transform: none;
+
+  margin: 20px 10px 0; /* mezera nahoře + mezi šipkami */
+}
+
+.arrow-left,
+.arrow-right {
+  position: static;
+}
+
+.reviews-slider {
+  gap: 10px;
+}
+
+.reviews-slider::after {
+  content: "";
+  display: block;
+}
+
+.reviews-slider {
+  text-align: center;
+}
+
+/* šipky vedle sebe */
+.arrow-left,
+.arrow-right {
+  display: inline-flex;
+}
+}
