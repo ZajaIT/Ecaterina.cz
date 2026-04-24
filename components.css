@@ -635,10 +635,14 @@
 }
 
 .hero-text {
-  position: relative !important; 
-  top: auto !important;
-  right: auto !important;
+  position: static !important; /* 🔥 absolutně klíčové */
+  top: unset !important;
+  right: unset !important;
   transform: none !important;
+
+  display: block !important;
+
+  margin-top: 260px !important; /* 🔥 POSUN POD OBRÁZEK */
 
   max-width: 100%;
   text-align: center;
