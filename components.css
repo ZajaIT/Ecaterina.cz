@@ -671,7 +671,7 @@
   order: 1;
 }
 
-/* 🔥 obě šipky pod textem na stejném řádku */
+/* 🔥 KLÍČ – šipky vedle sebe */
 .arrow-left,
 .arrow-right {
   position: static;
@@ -679,6 +679,8 @@
 
   order: 2;
   margin-top: 20px;
+
+  display: inline-flex; /* 🔥 tohle je důležité */
 }
 
 /* 🔥 mezera mezi nimi */
