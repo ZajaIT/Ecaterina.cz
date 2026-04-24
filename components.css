@@ -684,7 +684,7 @@
   .arrow {
     position: static;        /* Šipky přestanou "létat" a sednou si do řady */
     transform: none;
-    margin: 0 10px;          /* Mezera mezi šipkami navzájem */
+    margin: 0 30px;          /* Mezera mezi šipkami navzájem */
     display: flex;           /* Aby zůstaly viditelné a vycentrované */
     align-items: center;
     justify-content: center;
