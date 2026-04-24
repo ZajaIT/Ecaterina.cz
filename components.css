@@ -659,6 +659,7 @@
 .hero .btn {
   margin-top: 10px;
 }
+  
  .reviews-slider {
   display: flex;
   flex-direction: column;
@@ -670,23 +671,18 @@
   order: 1;
 }
 
-/* levá šipka dole */
-.arrow-left {
+/* 🔥 obě šipky pod textem na stejném řádku */
+.arrow-left,
+.arrow-right {
+  position: static;
+  transform: none;
+
   order: 2;
   margin-top: 20px;
-
-  position: static;
-  transform: none;
 }
 
-/* pravá šipka „přisunout“ vedle levé */
+/* 🔥 mezera mezi nimi */
 .arrow-right {
-  order: 3;
-
-  position: static;
-  transform: none;
-
-  margin-top: -45px;   /* 🔥 posune ji nahoru k levé */
-  margin-left: 60px;   /* 🔥 posune ji doprava vedle ní */
+  margin-left: 15px;
 }
 }
