@@ -28,6 +28,12 @@
 
     <a href="index.html#contact" class="cta-btn">Rychlý kontakt</a>
 
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
   </div>
 </header>
 
@@ -46,5 +52,59 @@
   </div>
 </footer>
 
+  <script>
+/* HAMBURGER MENU + LOCK SCROLL */
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav a');
+
+let scrollPosition = 0;
+
+hamburger.addEventListener('click', function(e) {
+  e.stopPropagation();
+
+  const isOpen = hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
+
+  if (isOpen) {
+    scrollPosition = window.scrollY;
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.classList.add('menu-open');
+  } else {
+    document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
+  }
+});
+
+/* ZAVŘENÍ KLIKEM MIMO */
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.header')) {
+
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+
+    if (document.body.classList.contains('menu-open')) {
+      document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollPosition);
+    }
+
+  }
+});
+
+/* ZAVŘENÍ PO KLIKU NA POLOŽKU */
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+
+    document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+  });
+});
+</script>
+  
 </body>
 </html>
