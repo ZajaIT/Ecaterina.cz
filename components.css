@@ -733,3 +733,35 @@
 .inline-story-link:hover {
   opacity: 0.7;
 }
+
+/* EXPERTISE */
+.expertise {
+  background: white;
+}
+
+.expertise-content {
+  max-width: 850px;
+}
+
+.expertise h2 {
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+.expertise h2:first-child {
+  margin-top: 0;
+}
+
+.expertise-item {
+  margin-bottom: 40px;
+}
+
+.expertise-item strong {
+  color: #456B6A;
+  font-size: 17px;
+}
+
+.expertise-item p:last-child {
+  margin-top: 10px;
+  line-height: 1.8;
+}
