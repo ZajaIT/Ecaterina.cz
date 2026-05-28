@@ -720,3 +720,16 @@
     overflow: hidden;
   }
 }
+
+/* INLINE ODKAZ V TEXTU */
+.inline-story-link {
+  color: #456B6A;
+  text-decoration: none;
+  font-style: italic;
+  margin-left: 6px;
+  transition: opacity 0.3s ease;
+}
+
+.inline-story-link:hover {
+  opacity: 0.7;
+}
