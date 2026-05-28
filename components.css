@@ -737,6 +737,8 @@
 /* EXPERTISE */
 .expertise {
   background: #f5f1ec;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .expertise-content {
