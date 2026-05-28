@@ -765,3 +765,11 @@
   margin-top: 10px;
   line-height: 1.8;
 }
+.expertise-course {
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.expertise-course strong {
+  color: #456B6A;
+}
