@@ -325,7 +325,7 @@
   display: inline-block;
   margin-top: 25px;
 
-  background: #456B6A; /* stejná barva jako mid-text */
+  background: #456B6A; 
   color: white;
 
   padding: 10px 20px;
@@ -478,7 +478,7 @@
   width: 45px;
   height: 45px;
 
-  border-radius: 10px; /* místo 50% */
+  border-radius: 10px;
 
   background: #FEA662;
   color: white;
@@ -627,7 +627,7 @@
   .hero {
   height: auto !important;
 
-  padding-top: 220px !important; /* 🔥 HLAVNÍ ŘÍZENÍ POZICE */
+  padding-top: 220px !important; 
   padding-bottom: 40px !important;
 
   background-size: contain !important;
@@ -636,7 +636,7 @@
 }
 
 .hero::before {
-  display: none !important; /* 🔥 úplně vypnout */
+  display: none !important; 
 }
 
 .hero-text {
@@ -662,30 +662,30 @@
 
   .reviews-slider {
     display: flex;
-    flex-wrap: wrap;         /* Umožní prvkům skládat se pod sebe */
-    justify-content: center; /* Vše (recenze i šipky) bude na střed */
+    flex-wrap: wrap;         
+    justify-content: center; 
     max-width: 100%;
   }
 
   .review {
-    width: 100%;             /* Recenze zabere celý řádek, čímž odsune šipky pod sebe */
-    order: -1;               /* Pojistka, aby recenze byla vždy nad šipkami */
-    position: relative;      /* Resetuje absolutní pozici z PC */
+    width: 100%;             
+    order: -1;               
+    position: relative;      
     opacity: 0;
-    display: none;           /* Skryje neaktivní recenze */
+    display: none;           
   }
 
   .review.active {
-    display: block;          /* Ukáže jen tu aktivní */
+    display: block;          
     opacity: 1;
-    margin-bottom: 30px;     /* Mezera mezi textem a šipkami */
+    margin-bottom: 30px;     
   }
 
   .arrow {
-    position: static;        /* Šipky přestanou "létat" a sednou si do řady */
+    position: static;        
     transform: none;
-    margin: 0 30px;          /* Mezera mezi šipkami navzájem */
-    display: flex;           /* Aby zůstaly viditelné a vycentrované */
+    margin: 0 30px;          
+    display: flex;          
     align-items: center;
     justify-content: center;
   }
@@ -720,8 +720,6 @@
     overflow: hidden;
   }
 }
-
-/* INLINE ODKAZ V TEXTU */
 .inline-story-link {
   color: #456B6A;
   text-decoration: none;
@@ -734,7 +732,6 @@
   opacity: 0.7;
 }
 
-/* EXPERTISE */
 .expertise {
   background: #f5f1ec;
   padding-top: 80px;
