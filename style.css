@@ -4,8 +4,6 @@
   --text: #2c2c2c;
   --accent: #d6c3b3;
 }
-
-/* RESET + ZÁKLAD */
 * {
   margin: 0;
   padding: 0;
@@ -28,21 +26,15 @@ html {
 h1, h2, h3 {
   font-family: Georgia, serif;
 }
-
-/* KONTEJNER */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* SEKCE */
 .section {
   padding: 60px 0;
   scroll-margin-top: 70px;
 }
-
-/* NADPISY */
 h1 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -58,8 +50,6 @@ h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
-/* TEXT */
 p {
   margin-bottom: 15px;
 }
