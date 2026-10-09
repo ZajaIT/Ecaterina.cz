@@ -519,7 +519,7 @@ slider.addEventListener('touchend', e => {
 }, {passive: true});
 
 function handleSwipe() {
-  const swipeThreshold = 50; // minimální délka swipu v pixelech
+  const swipeThreshold = 50; 
   
   if (touchEndX < touchStartX - swipeThreshold) {
     // Swipe doleva -> další recenze
@@ -536,7 +536,6 @@ function handleSwipe() {
   }
 }
 
- /* HAMBURGER MENU + LOCK SCROLL (FULL FIX) */
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav a');
@@ -560,7 +559,6 @@ hamburger.addEventListener('click', function(e) {
   }
 });
 
-/* ZAVŘENÍ KLIKEM MIMO */
 document.addEventListener('click', function(e) {
   if (!e.target.closest('.header')) {
 
@@ -576,7 +574,6 @@ document.addEventListener('click', function(e) {
   }
 });
 
-/* ZAVŘENÍ PO KLIKU NA POLOŽKU */
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
 
