@@ -1,4 +1,3 @@
-/* TABLET A VÝŠ */
 @media (min-width: 768px) {
 
   .about-grid {
@@ -20,7 +19,6 @@
 
 }
 
-/* DESKTOP */
 @media (min-width: 1024px) {
 
   h1 {
